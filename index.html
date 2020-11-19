@@ -1,12 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Jorange</title>
-</head>
-<body>
-    <p>
-        hello less
-    </p>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Jorange</title>
+        <link rel="stylesheet" href="css/jquery.pagepiling.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="container-modal">
+            <div class="modal">
+                <div class='modal-content'>
+                    <ul class="modal-content-list">
+                        <li class="modal-content-list-item" data-menuanchor="about">
+                            <a href="#about" id="close-modal-link">
+                                ABOUT US
+                            </a>
+                        </li>
+                        <li class="modal-content-list-item" data-menuanchor="about">
+                            <a href="#about">
+                                OUR WORKS
+                            </a>
+                        </li>
+                        <li class="modal-content-list-item" data-menuanchor="about">
+                            <a href="#about">
+                                SERVICES
+                            </a>
+                        </li>
+                        <li class="modal-content-list-item" data-menuanchor="about">
+                            <a href="#about">
+                                JOBS
+                            </a>
+                        </li>
+                        <li class="modal-content-list-item" data-menuanchor="about">
+                            <a href="#about">
+                                BLOG
+                            </a>
+                        </li>
+                        <li class="modal-content-list-item" data-menuanchor="about">
+                            <a href="#about">
+                                CONTACT
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="social">
+                        <span class="social-item">
+                            <a href="#">Facebook</a>
+                        </span>
+                        /
+                        <span class="social-item">
+                            <a href="#">Instagram</a>
+                        </span>
+                        /
+                        <span class="social-item">
+                            <a href="#">YouTube</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="header">
+            <div id="myMenu" class="container">
+                <div class="row row-align">
+                    <div data-menuanchor="home" class="active col logo-block">
+                        <a href="#home" class="header-item">JO.</a>
+                    </div>
+                    <div data-menuanchor="home" class="active col nav-block">
+                        <button id="open-modal-btn" class="show-modal header-item open-modal">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png" alt="burger">
+                        </button>
+                        <button id="close-modal-btn" class="close-modal header-item">
+                            <img src="https://vrboadvocates.com/wp-content/themes/homeaway/assets/images/white-close.png" alt="close">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="pagepiling">
+            <div class="section home-area" id="home">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="content-wrapper">
+                                <h1 class="content-title">
+                                    WELCOME TO JORANGE
+                                </h1>
+                                <p class="content-description">
+                                    We help companies and individuals design web and mobile applications
+                                </p>
+                                <button class="started-button">
+                                    LET'S GET STARTED
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-info">
+                    <a href="#" class="more-button">MORE INFORMATION</a>
+                </div>
+            </div>
+            <div class="section about-area" id="about">
+                <div class="wrapper">
+                    <h3>About me</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, nostrum.</p>
+                </div>
+            </div>
+            <div class="section portfolio-area" id="portfolio">
+                <div class="wrapper">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dignissimos facilis id rem tempore. At eius nisi odio repellendus? Aperiam asperiores, dolorem facilis fugiat minima quae quasi quisquam reiciendis sint?</p>
+                </div>
+            </div>
+            <div class="section contact-area" id="contact">
+                <div class="wrapper">
+                    <h3>Contacts</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequatur dolore unde. Deserunt, in tempore.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.pagepiling.js"></script>
+        <script src="js/index.js"></script>
+    </body>
 </html>
