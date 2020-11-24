@@ -1,8 +1,35 @@
 /* responsive */
 /* modal */
-html { overflow-y: scroll; }
+html {
+  overflow-y: scroll;
+  -moz-overflow: hidden;
+}
+.section {
+  display: inline-block;
+}
+@-moz-document url-prefix() {
+  .section {
+    display: block;
+    overflow: auto;
+    -ms-overflow-style: none; /* IE 11 */
+    scrollbar-width: none; /* Firefox 64 */
+  }
+}
 body {
   min-width: 320px;
+}
+
+.pp-section.pp-table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pp-tableCell-additional {
+  //padding-top: 5%;
+}
+.section{
+  text-align: center!important;
 }
 * {
   font-family: 'CalibreMedium', sans-serif;
@@ -78,6 +105,7 @@ nav {
 .about-area {
   background-color: #fff;
   overflow: hidden;
+
 }
 .works-area {
   background-color: #fff;
@@ -250,6 +278,7 @@ nav {
   color: #ccc !important;
 }
 .content-wrapper {
+  margin-top: 31%;
   text-align: center;
   .content-title {
     font-weight: 600;
@@ -376,7 +405,7 @@ nav {
 .about-area-content {
   text-align: center;
   width: 1035px;
-  margin: 0 auto;
+  margin: 150px auto 0 auto;
 }
 .about-area-content-title {
   font-weight: 600;
@@ -420,10 +449,13 @@ nav {
   background-size: cover;
   object-fit: contain;
 }
+.additional-aligner-prodicts {
+  margin-top: 170px;
+}
 #slider {
   position: relative;
   overflow: hidden;
-  margin: 0 auto;
+  margin: 7% auto 0 auto;
   ul {
     position: relative;
     margin: 0;
@@ -872,7 +904,12 @@ a.control_next {
   background: turquoise;
 }
 .col-align {
+  margin-top: 10%;
   position: relative;
+}
+.col-align-form {
+  margin-top: 17%;
+
 }
 .buttons {
   font-family: CalibreLight, serif;
@@ -1396,6 +1433,22 @@ input[type=number]:focus,
 }
 
 @media screen and (max-width: 992px) {
+  .content-wrapper {
+    margin-top: 50%;
+  }
+
+  .col-align {
+    margin-top: 0;
+  }
+
+  .col-align-form {
+    margin-top: 25%;
+  }
+
+  .jobs-mobile {
+    margin-top: 10%;
+  }
+
   .social-info {
     text-align: center;
   }
@@ -1488,7 +1541,7 @@ input[type=number]:focus,
 @media screen and (max-width: 1240px) {
   .about-area-content {
     width: auto;
-    margin: 0 auto;
+    margin: 20% auto;
   }
   .contact-form {
     width: auto;
@@ -1530,6 +1583,7 @@ input[type=number]:focus,
 
 @media screen and (max-width: 1240px) {
   .mobile-slider {
+    margin-top: 23%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1585,7 +1639,7 @@ input[type=number]:focus,
   }
 
   .col-align {
-    margin-top: 30px;
+    //margin-top: 6%;
   }
 }
 
